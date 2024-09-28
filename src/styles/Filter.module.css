@@ -1,0 +1,26 @@
+.filter{
+    padding: 50px 0;
+}
+.filter .container{
+    text-align: center;
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+}
+.filter .container button{
+    padding: 10px 15px;
+    background-color: #ccc;
+    border: none;
+    color: black;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.filter .container button:not(.active):hover{
+    background-color: var(--main-color-alt);
+    color: white;
+}
+.filter .container button.active{
+    background-color: var(--main-color);
+    color: white;
+}
